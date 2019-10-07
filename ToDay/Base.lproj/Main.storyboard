@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Black.otf">
+            <string>SFProDisplay-Black</string>
+        </array>
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-BoldItalic.otf">
+            <string>SFProDisplay-BoldItalic</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00a-0I-GlS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRG-d3-7Ff">
+                                <rect key="frame" x="35" y="76" width="152.5" height="60"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nothing to do!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-aS-JPV">
+                                <rect key="frame" x="142.5" y="436" width="129" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-BoldItalic" family="SF Pro Display" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Gustavo Zapata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGB-u5-ImV">
+                                <rect key="frame" x="118.5" y="845" width="177" height="16"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzc-Nw-rSg">
+                                <rect key="frame" x="324" y="52" width="52" height="108"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="80"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addTaskButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPF-wd-ImB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fic-Ss-L2s">
+                                <rect key="frame" x="35" y="210" width="341" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w7q-6t-Xfa" firstAttribute="bottom" secondItem="jGB-u5-ImV" secondAttribute="bottom" constant="1" id="2LN-BX-Xwo"/>
+                            <constraint firstItem="MRG-d3-7Ff" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="32" id="9Il-C3-tyJ"/>
+                            <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" secondItem="Qzc-Nw-rSg" secondAttribute="trailing" constant="38" id="9nM-Ge-AnG"/>
+                            <constraint firstItem="jGB-u5-ImV" firstAttribute="centerX" secondItem="00a-0I-GlS" secondAttribute="centerX" id="CvI-iN-HXn"/>
+                            <constraint firstItem="Qzc-Nw-rSg" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="trailing" constant="136.5" id="GQd-ED-76r"/>
+                            <constraint firstItem="MRG-d3-7Ff" firstAttribute="leading" secondItem="w7q-6t-Xfa" secondAttribute="leading" constant="35" id="Ozs-9r-wHF"/>
+                            <constraint firstItem="Qzc-Nw-rSg" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="8" id="PtL-Fu-Ilv"/>
+                            <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MRG-d3-7Ff" secondAttribute="trailing" symbolic="YES" id="ehX-2d-zgm"/>
+                            <constraint firstItem="LBY-aS-JPV" firstAttribute="centerX" secondItem="00a-0I-GlS" secondAttribute="centerX" id="fdE-9N-A0S"/>
+                            <constraint firstItem="LBY-aS-JPV" firstAttribute="centerY" secondItem="00a-0I-GlS" secondAttribute="centerY" id="ya0-MB-sWh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w7q-6t-Xfa"/>
                     </view>
+                    <connections>
+                        <outlet property="nothingToDo" destination="LBY-aS-JPV" id="azM-Ho-xWl"/>
+                        <outlet property="taskNameInput" destination="fic-Ss-L2s" id="s27-dL-yPi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
         </scene>
     </scenes>
 </document>
