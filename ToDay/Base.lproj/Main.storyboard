@@ -55,11 +55,13 @@
                                     <action selector="addTaskButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPF-wd-ImB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fic-Ss-L2s">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fic-Ss-L2s">
                                 <rect key="frame" x="35" y="210" width="341" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="createNewTaskWithKey:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="8oK-x4-8b4"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,11 +70,14 @@
                             <constraint firstItem="MRG-d3-7Ff" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="32" id="9Il-C3-tyJ"/>
                             <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" secondItem="Qzc-Nw-rSg" secondAttribute="trailing" constant="38" id="9nM-Ge-AnG"/>
                             <constraint firstItem="jGB-u5-ImV" firstAttribute="centerX" secondItem="00a-0I-GlS" secondAttribute="centerX" id="CvI-iN-HXn"/>
+                            <constraint firstItem="fic-Ss-L2s" firstAttribute="trailing" secondItem="Qzc-Nw-rSg" secondAttribute="trailing" id="D3D-YE-clA"/>
                             <constraint firstItem="Qzc-Nw-rSg" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="trailing" constant="136.5" id="GQd-ED-76r"/>
                             <constraint firstItem="MRG-d3-7Ff" firstAttribute="leading" secondItem="w7q-6t-Xfa" secondAttribute="leading" constant="35" id="Ozs-9r-wHF"/>
                             <constraint firstItem="Qzc-Nw-rSg" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="8" id="PtL-Fu-Ilv"/>
+                            <constraint firstItem="fic-Ss-L2s" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="leading" id="Tgi-3a-y4R"/>
                             <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MRG-d3-7Ff" secondAttribute="trailing" symbolic="YES" id="ehX-2d-zgm"/>
                             <constraint firstItem="LBY-aS-JPV" firstAttribute="centerX" secondItem="00a-0I-GlS" secondAttribute="centerX" id="fdE-9N-A0S"/>
+                            <constraint firstItem="fic-Ss-L2s" firstAttribute="top" secondItem="Qzc-Nw-rSg" secondAttribute="bottom" constant="50" id="o97-GR-ZaW"/>
                             <constraint firstItem="LBY-aS-JPV" firstAttribute="centerY" secondItem="00a-0I-GlS" secondAttribute="centerY" id="ya0-MB-sWh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w7q-6t-Xfa"/>
