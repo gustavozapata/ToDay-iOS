@@ -19,6 +19,9 @@
         <array key="SF-Pro-Display-Medium.otf">
             <string>SFProDisplay-Medium</string>
         </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -30,13 +33,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRG-d3-7Ff">
-                                <rect key="frame" x="35" y="76" width="152.5" height="60"/>
+                                <rect key="frame" x="35" y="76" width="139" height="58.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nothing to do!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-aS-JPV">
-                                <rect key="frame" x="142.5" y="436" width="129" height="24"/>
+                                <rect key="frame" x="145" y="436" width="124.5" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-BoldItalic" family="SF Pro Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,48 +51,128 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzc-Nw-rSg">
-                                <rect key="frame" x="324" y="52" width="52" height="108"/>
+                                <rect key="frame" x="297" y="50" width="79" height="106"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="80"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="addTaskButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPF-wd-ImB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fic-Ss-L2s">
-                                <rect key="frame" x="35" y="210" width="341" height="38"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fic-Ss-L2s">
+                                <rect key="frame" x="37" y="150" width="341" height="30"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="createNewTaskWithKey:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="8oK-x4-8b4"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crh-sh-Sgq">
+                                <rect key="frame" x="332.5" y="36" width="55.5" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doc-Mm-i62">
+                                <rect key="frame" x="239" y="188" width="50" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAddTaskAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2h-Pl-97w"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkm-NX-QqK">
+                                <rect key="frame" x="125" y="188" width="66" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Add Task">
+                                    <color key="titleColor" red="0.0" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTaskAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddm-9H-bjZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="w7q-6t-Xfa" firstAttribute="bottom" secondItem="jGB-u5-ImV" secondAttribute="bottom" constant="1" id="2LN-BX-Xwo"/>
                             <constraint firstItem="MRG-d3-7Ff" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="32" id="9Il-C3-tyJ"/>
                             <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" secondItem="Qzc-Nw-rSg" secondAttribute="trailing" constant="38" id="9nM-Ge-AnG"/>
+                            <constraint firstItem="doc-Mm-i62" firstAttribute="top" secondItem="fic-Ss-L2s" secondAttribute="bottom" constant="8" id="C2V-dU-nGc"/>
                             <constraint firstItem="jGB-u5-ImV" firstAttribute="centerX" secondItem="00a-0I-GlS" secondAttribute="centerX" id="CvI-iN-HXn"/>
-                            <constraint firstItem="fic-Ss-L2s" firstAttribute="trailing" secondItem="Qzc-Nw-rSg" secondAttribute="trailing" id="D3D-YE-clA"/>
-                            <constraint firstItem="Qzc-Nw-rSg" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="trailing" constant="136.5" id="GQd-ED-76r"/>
+                            <constraint firstItem="fic-Ss-L2s" firstAttribute="trailing" secondItem="Qzc-Nw-rSg" secondAttribute="trailing" constant="2" id="D3D-YE-clA"/>
+                            <constraint firstItem="Qzc-Nw-rSg" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="trailing" constant="123" id="GQd-ED-76r"/>
                             <constraint firstItem="MRG-d3-7Ff" firstAttribute="leading" secondItem="w7q-6t-Xfa" secondAttribute="leading" constant="35" id="Ozs-9r-wHF"/>
-                            <constraint firstItem="Qzc-Nw-rSg" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="8" id="PtL-Fu-Ilv"/>
-                            <constraint firstItem="fic-Ss-L2s" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="leading" id="Tgi-3a-y4R"/>
+                            <constraint firstItem="Qzc-Nw-rSg" firstAttribute="top" secondItem="w7q-6t-Xfa" secondAttribute="top" constant="6" id="PtL-Fu-Ilv"/>
+                            <constraint firstItem="fic-Ss-L2s" firstAttribute="leading" secondItem="MRG-d3-7Ff" secondAttribute="leading" constant="2" id="Tgi-3a-y4R"/>
+                            <constraint firstItem="crh-sh-Sgq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="w7q-6t-Xfa" secondAttribute="leading" symbolic="YES" id="a7k-YA-D6q"/>
+                            <constraint firstItem="doc-Mm-i62" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fkm-NX-QqK" secondAttribute="trailing" constant="8" symbolic="YES" id="bfA-Wb-TUu"/>
+                            <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" secondItem="crh-sh-Sgq" secondAttribute="trailing" constant="26" id="dJS-ax-8Fn"/>
                             <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MRG-d3-7Ff" secondAttribute="trailing" symbolic="YES" id="ehX-2d-zgm"/>
                             <constraint firstItem="LBY-aS-JPV" firstAttribute="centerX" secondItem="00a-0I-GlS" secondAttribute="centerX" id="fdE-9N-A0S"/>
-                            <constraint firstItem="fic-Ss-L2s" firstAttribute="top" secondItem="Qzc-Nw-rSg" secondAttribute="bottom" constant="50" id="o97-GR-ZaW"/>
+                            <constraint firstItem="Fkm-NX-QqK" firstAttribute="top" secondItem="fic-Ss-L2s" secondAttribute="bottom" constant="8" id="gyX-5p-D1e"/>
+                            <constraint firstItem="Fkm-NX-QqK" firstAttribute="leading" secondItem="w7q-6t-Xfa" secondAttribute="leading" constant="125" id="l8g-Tb-d8C"/>
+                            <constraint firstItem="crh-sh-Sgq" firstAttribute="top" secondItem="00a-0I-GlS" secondAttribute="top" constant="36" id="mGJ-9a-r9p"/>
+                            <constraint firstItem="fic-Ss-L2s" firstAttribute="top" secondItem="Qzc-Nw-rSg" secondAttribute="bottom" constant="-6" id="o97-GR-ZaW"/>
+                            <constraint firstItem="w7q-6t-Xfa" firstAttribute="trailing" secondItem="doc-Mm-i62" secondAttribute="trailing" constant="125" id="oFb-zP-J87"/>
                             <constraint firstItem="LBY-aS-JPV" firstAttribute="centerY" secondItem="00a-0I-GlS" secondAttribute="centerY" id="ya0-MB-sWh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w7q-6t-Xfa"/>
                     </view>
                     <connections>
+                        <outlet property="addTaskBtn" destination="Fkm-NX-QqK" id="S64-fp-bXI"/>
+                        <outlet property="cancelAddTaskBtn" destination="doc-Mm-i62" id="Cd9-8J-Rcn"/>
                         <outlet property="nothingToDo" destination="LBY-aS-JPV" id="azM-Ho-xWl"/>
+                        <outlet property="settingsLabel" destination="crh-sh-Sgq" id="hMZ-Af-Gm0"/>
                         <outlet property="taskNameInput" destination="fic-Ss-L2s" id="s27-dL-yPi"/>
+                        <segue destination="QnC-dg-Kao" kind="show" identifier="toSettings" id="paH-pz-9fF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="wyr-hj-T9o">
+            <objects>
+                <viewController id="QnC-dg-Kao" customClass="SettingsViewController" customModule="ToDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o3F-uW-F9P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-7V-kMB">
+                                <rect key="frame" x="30" y="40" width="147" height="48"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change app theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o12-cM-TtW">
+                                <rect key="frame" x="30" y="182" width="223" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gPd-JA-CLe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Srh-7V-kMB" firstAttribute="top" secondItem="gKN-4b-Z2D" secondAttribute="top" constant="40" id="8m6-f7-T9x"/>
+                            <constraint firstItem="gKN-4b-Z2D" firstAttribute="trailing" secondItem="o12-cM-TtW" secondAttribute="trailing" constant="161" id="BbB-Oi-TKZ"/>
+                            <constraint firstItem="gKN-4b-Z2D" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Srh-7V-kMB" secondAttribute="trailing" symbolic="YES" id="TAA-vI-FcU"/>
+                            <constraint firstItem="Srh-7V-kMB" firstAttribute="leading" secondItem="gKN-4b-Z2D" secondAttribute="leading" constant="30" id="aAX-XC-vI9"/>
+                            <constraint firstItem="o12-cM-TtW" firstAttribute="top" secondItem="Srh-7V-kMB" secondAttribute="bottom" constant="94" id="hal-6K-ThT"/>
+                            <constraint firstItem="gKN-4b-Z2D" firstAttribute="bottom" secondItem="o12-cM-TtW" secondAttribute="bottom" constant="596" id="j0f-di-5KN"/>
+                            <constraint firstItem="o12-cM-TtW" firstAttribute="leading" secondItem="Srh-7V-kMB" secondAttribute="leading" id="vsm-5V-zbL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gKN-4b-Z2D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oow-7p-d6N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gd-K0-jb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="116.51785714285714"/>
         </scene>
     </scenes>
 </document>

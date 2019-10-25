@@ -25,14 +25,15 @@
 		BF1AC96A234AEA63000AFD9C /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF1AC958234AEA63000AFD9C /* SF-Pro-Display-UltralightItalic.otf */; };
 		BF1AC96B234AEA63000AFD9C /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF1AC959234AEA63000AFD9C /* SF-Pro-Display-Medium.otf */; };
 		BF1AC96C234AEA63000AFD9C /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF1AC95A234AEA63000AFD9C /* SF-Pro-Display-SemiboldItalic.otf */; };
+		BF808FA92362AC17007BC55E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF808FA82362AC17007BC55E /* CustomTextField.swift */; };
 		BFAF948F234AD90C00C4CFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF948E234AD90C00C4CFCE /* AppDelegate.swift */; };
 		BFAF9491234AD90C00C4CFCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF9490234AD90C00C4CFCE /* SceneDelegate.swift */; };
 		BFAF9493234AD90C00C4CFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF9492234AD90C00C4CFCE /* ViewController.swift */; };
 		BFAF9496234AD90C00C4CFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9494234AD90C00C4CFCE /* Main.storyboard */; };
-		BFAF9498234AD90D00C4CFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9497234AD90D00C4CFCE /* Assets.xcassets */; };
 		BFAF949B234AD90D00C4CFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9499234AD90D00C4CFCE /* LaunchScreen.storyboard */; };
 		BFAF94A6234AD90E00C4CFCE /* ToDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF94A5234AD90E00C4CFCE /* ToDayTests.swift */; };
 		BFAF94B1234AD90E00C4CFCE /* ToDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF94B0234AD90E00C4CFCE /* ToDayUITests.swift */; };
+		BFF1E5412361681E00F0EEE4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1E5402361681E00F0EEE4 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,12 +73,12 @@
 		BF1AC958234AEA63000AFD9C /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-UltralightItalic.otf"; path = "ToDay/fonts/SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
 		BF1AC959234AEA63000AFD9C /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "ToDay/fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		BF1AC95A234AEA63000AFD9C /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-SemiboldItalic.otf"; path = "ToDay/fonts/SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		BF808FA82362AC17007BC55E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BFAF948B234AD90C00C4CFCE /* ToDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAF948E234AD90C00C4CFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFAF9490234AD90C00C4CFCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BFAF9492234AD90C00C4CFCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFAF9495234AD90C00C4CFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BFAF9497234AD90D00C4CFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFAF949A234AD90D00C4CFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFAF949C234AD90D00C4CFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFAF94A1234AD90E00C4CFCE /* ToDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +87,8 @@
 		BFAF94AC234AD90E00C4CFCE /* ToDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAF94B0234AD90E00C4CFCE /* ToDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDayUITests.swift; sourceTree = "<group>"; };
 		BFAF94B2234AD90E00C4CFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF1E5402361681E00F0EEE4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BFF1E5422361683000F0EEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +159,12 @@
 			children = (
 				BFAF948E234AD90C00C4CFCE /* AppDelegate.swift */,
 				BFAF9490234AD90C00C4CFCE /* SceneDelegate.swift */,
+				BFF1E5402361681E00F0EEE4 /* SettingsViewController.swift */,
 				BFAF9492234AD90C00C4CFCE /* ViewController.swift */,
+				BF808FA82362AC17007BC55E /* CustomTextField.swift */,
+				BFF1E5422361683000F0EEE4 /* Assets.xcassets */,
 				BF1AC948234AEA0B000AFD9C /* fonts */,
 				BFAF9494234AD90C00C4CFCE /* Main.storyboard */,
-				BFAF9497234AD90D00C4CFCE /* Assets.xcassets */,
 				BFAF9499234AD90D00C4CFCE /* LaunchScreen.storyboard */,
 				BFAF949C234AD90D00C4CFCE /* Info.plist */,
 			);
@@ -307,7 +312,6 @@
 				BF1AC96B234AEA63000AFD9C /* SF-Pro-Display-Medium.otf in Resources */,
 				BF1AC96C234AEA63000AFD9C /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
 				BFAF949B234AD90D00C4CFCE /* LaunchScreen.storyboard in Resources */,
-				BFAF9498234AD90D00C4CFCE /* Assets.xcassets in Resources */,
 				BFAF9496234AD90C00C4CFCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +340,8 @@
 				BFAF9493234AD90C00C4CFCE /* ViewController.swift in Sources */,
 				BFAF948F234AD90C00C4CFCE /* AppDelegate.swift in Sources */,
 				BFAF9491234AD90C00C4CFCE /* SceneDelegate.swift in Sources */,
+				BFF1E5412361681E00F0EEE4 /* SettingsViewController.swift in Sources */,
+				BF808FA92362AC17007BC55E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
