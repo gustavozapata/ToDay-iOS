@@ -33,13 +33,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRG-d3-7Ff">
-                                <rect key="frame" x="35" y="76" width="139" height="58.5"/>
+                                <rect key="frame" x="35" y="76" width="152.5" height="60"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nothing to do!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-aS-JPV">
-                                <rect key="frame" x="145" y="436" width="124.5" height="24"/>
+                                <rect key="frame" x="142.5" y="436" width="129" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-BoldItalic" family="SF Pro Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzc-Nw-rSg">
-                                <rect key="frame" x="297" y="50" width="79" height="106"/>
+                                <rect key="frame" x="310.5" y="50" width="65.5" height="108"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="80"/>
                                 <state key="normal" title="+"/>
                                 <connections>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fic-Ss-L2s">
-                                <rect key="frame" x="37" y="150" width="341" height="30"/>
+                                <rect key="frame" x="37" y="152" width="341" height="30"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -73,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doc-Mm-i62">
-                                <rect key="frame" x="239" y="188" width="50" height="30"/>
+                                <rect key="frame" x="239" y="190" width="50" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.0" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkm-NX-QqK">
-                                <rect key="frame" x="125" y="188" width="66" height="30"/>
+                                <rect key="frame" x="125" y="190" width="66" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Add Task">
                                     <color key="titleColor" red="0.0" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-7V-kMB">
-                                <rect key="frame" x="30" y="40" width="147" height="48"/>
+                                <rect key="frame" x="30" y="40" width="167.5" height="48"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -155,22 +155,62 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luna Llena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP5-ao-y0r">
+                                <rect key="frame" x="111" y="243" width="96" height="25"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TfB-bW-VM8">
+                                <rect key="frame" x="318" y="240" width="51" height="31"/>
+                                <connections>
+                                    <action selector="lunaLlenaAction:" destination="QnC-dg-Kao" eventType="valueChanged" id="piv-8f-gt4"/>
+                                    <action selector="lunaLlenaAction:" destination="4d2-1H-tNX" eventType="valueChanged" id="uAU-B7-M6a"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-zl-ZDr">
+                                <rect key="frame" x="30" y="243" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.12941176470588234" green="0.082352941176470587" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.12941176470588234" green="0.082352941176470587" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-Xa-lT6">
+                                <rect key="frame" x="55" y="243" width="25" height="25"/>
+                                <color key="backgroundColor" red="1" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Srh-7V-kMB" firstAttribute="top" secondItem="gKN-4b-Z2D" secondAttribute="top" constant="40" id="8m6-f7-T9x"/>
                             <constraint firstItem="gKN-4b-Z2D" firstAttribute="trailing" secondItem="o12-cM-TtW" secondAttribute="trailing" constant="161" id="BbB-Oi-TKZ"/>
+                            <constraint firstItem="TfB-bW-VM8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lP5-ao-y0r" secondAttribute="trailing" constant="8" symbolic="YES" id="DcQ-jf-YOS"/>
+                            <constraint firstItem="gKN-4b-Z2D" firstAttribute="bottom" secondItem="XWD-Xa-lT6" secondAttribute="bottom" constant="540" id="EPf-32-RL5"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="top" secondItem="o12-cM-TtW" secondAttribute="bottom" constant="31" id="HyT-gG-f6n"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="leading" secondItem="XWD-Xa-lT6" secondAttribute="trailing" constant="31" id="Khf-2H-sce"/>
+                            <constraint firstItem="gKN-4b-Z2D" firstAttribute="trailing" secondItem="TfB-bW-VM8" secondAttribute="trailing" constant="47" id="MYR-rd-OIo"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="centerY" secondItem="TfB-bW-VM8" secondAttribute="centerY" id="QWj-bl-ZJH"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="centerY" secondItem="XWD-Xa-lT6" secondAttribute="centerY" id="Sdv-yr-XHv"/>
                             <constraint firstItem="gKN-4b-Z2D" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Srh-7V-kMB" secondAttribute="trailing" symbolic="YES" id="TAA-vI-FcU"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="centerY" secondItem="Yji-zl-ZDr" secondAttribute="centerY" id="TfF-MH-zp4"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="leading" secondItem="o3F-uW-F9P" secondAttribute="leading" constant="111" id="XHa-aa-hnd"/>
+                            <constraint firstItem="XWD-Xa-lT6" firstAttribute="leading" secondItem="o3F-uW-F9P" secondAttribute="leading" constant="55" id="Y2E-LE-NoF"/>
                             <constraint firstItem="Srh-7V-kMB" firstAttribute="leading" secondItem="gKN-4b-Z2D" secondAttribute="leading" constant="30" id="aAX-XC-vI9"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="top" secondItem="XWD-Xa-lT6" secondAttribute="top" id="dKf-Z9-70q"/>
+                            <constraint firstItem="XWD-Xa-lT6" firstAttribute="leading" secondItem="Yji-zl-ZDr" secondAttribute="trailing" id="gWi-Yg-fF6"/>
                             <constraint firstItem="o12-cM-TtW" firstAttribute="top" secondItem="Srh-7V-kMB" secondAttribute="bottom" constant="94" id="hal-6K-ThT"/>
                             <constraint firstItem="gKN-4b-Z2D" firstAttribute="bottom" secondItem="o12-cM-TtW" secondAttribute="bottom" constant="596" id="j0f-di-5KN"/>
+                            <constraint firstItem="Yji-zl-ZDr" firstAttribute="leading" secondItem="o12-cM-TtW" secondAttribute="leading" id="r23-8C-jnB"/>
+                            <constraint firstItem="lP5-ao-y0r" firstAttribute="top" secondItem="Yji-zl-ZDr" secondAttribute="top" id="tPF-5m-RMA"/>
                             <constraint firstItem="o12-cM-TtW" firstAttribute="leading" secondItem="Srh-7V-kMB" secondAttribute="leading" id="vsm-5V-zbL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gKN-4b-Z2D"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oow-7p-d6N"/>
+                    <connections>
+                        <outlet property="settingsHeading" destination="Srh-7V-kMB" id="l3i-oN-Sxr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gd-K0-jb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4d2-1H-tNX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="763.768115942029" y="116.51785714285714"/>
         </scene>

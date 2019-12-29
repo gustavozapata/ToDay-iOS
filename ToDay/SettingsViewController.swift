@@ -9,14 +9,28 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    var isLunaLLena = false
 
+    @IBOutlet weak var settingsHeading: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func lunaLlenaAction(_ sender: Any) {
+        if !isLunaLLena {
+            self.view.backgroundColor = UIColor(red: 0.3, green: 0.2, blue: 1.74, alpha: 1)
+            settingsHeading.textColor = UIColor(red: 2.5, green: 2.1, blue: 0.0, alpha: 1)
+            isLunaLLena = true
+        } else {
+            self.view.backgroundColor = UIColor.white
+            settingsHeading.textColor = UIColor.black
+            isLunaLLena = false
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

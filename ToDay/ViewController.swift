@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var tasks = [UILabel]()
+    var radios = [UIView]()
+    var radioY = 252
     var elY = 250
     
     @IBOutlet weak var settingsLabel: UILabel!
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
         if tasks.isEmpty {
             toggleAddTask(toggle: true)
         }
+
         let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.onSettingsTap))
         settingsLabel.isUserInteractionEnabled = true
         settingsLabel.addGestureRecognizer(tap)
@@ -58,19 +61,46 @@ class ViewController: UIViewController {
     
     func displayNewTask() {
         if !taskNameInput.text!.isEmpty {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 30))
-            label.center = CGPoint(x: 300, y: elY)
-            elY += 50
-            label.font = UIFont.boldSystemFont(ofSize: 27.0)
-            
-            label.text = taskNameInput.text
-            tasks.append(label)
-            taskNameInput.text = ""
-            
-            for i in 0..<tasks.count {
-                self.view.addSubview(tasks[i])
-            }
+            buildTaskLabel()
+            buildTaskRadio()
             toggleAddTask(toggle: true)
+        }
+    }
+    
+    func buildTaskRadio() {
+        let radio = UIView(frame: CGRect(x: 0, y:0, width: 28, height: 28))
+        radio.center = CGPoint(x: 45, y: radioY)
+        radio.layer.borderWidth = 2
+        radio.layer.cornerRadius = 14
+        radioY += 55
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.onRadioTap))
+        radio.isUserInteractionEnabled = true
+        radio.addGestureRecognizer(tap)
+        
+        radios.append(radio)
+        
+        for i in 0..<radios.count {
+            self.view.addSubview(radios[i])
+        }
+    }
+    
+    @IBAction func onRadioTap(sender: UITapGestureRecognizer) {
+        
+    }
+    
+    func buildTaskLabel() {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 30))
+        label.center = CGPoint(x: 320, y: elY)
+        elY += 55
+        label.font = UIFont.boldSystemFont(ofSize: 27.0)
+        
+        label.text = taskNameInput.text
+        tasks.append(label)
+        taskNameInput.text = ""
+        
+        for i in 0..<tasks.count {
+            self.view.addSubview(tasks[i])
         }
     }
     
